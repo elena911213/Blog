@@ -1,0 +1,6 @@
+{
+  "brand": "我的部落格",
+  "links": [
+    {"title": "首頁", "url": "index.html"}
+  ]
+}

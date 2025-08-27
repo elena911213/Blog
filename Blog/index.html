@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>部落格平台</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div id="nav-placeholder"></div>
+
+  <div class="content-wrapper">
+    <aside class="sidebar">
+      <div id="category-nav"></div>
+      <div class="recent-posts-panel">
+        <h3>最新文章</h3>
+        <div id="recent-posts-list">
+          <!-- 最近文章列表将通过JS动态加载 -->
+        </div>
+      </div>
+    </aside>
+    
+    <div class="main-content">
+      <!-- 选项卡导航 -->
+      <nav class="tab-navigation">
+        <button class="tab-button active" data-tab="home">
+          <i class="fas fa-home"></i>
+          首頁
+        </button>
+        <button class="tab-button" data-tab="about">
+          <i class="fas fa-user"></i>
+          關於
+        </button>
+      </nav>
+
+      <!-- 首页内容 -->
+      <section id="home-section" class="content-section" style="display: block;">
+        <h2 class="section-title">最新文章</h2>
+        <div class="article-list">
+          <!-- 文章列表将通过JS动态加载 -->
+        </div>
+      </section>
+
+      <!-- 关于页面内容 -->
+      <section id="about-section" class="content-section" style="display: none;">
+        <!-- 关于内容将通过JS动态加载 -->
+      </section>
+
+      <!-- 文章详情内容 -->
+      <section id="article-section" class="content-section" style="display: none;">
+        <!-- 文章详情将通过JS动态加载 -->
+      </section>
+    </div>
+  </div>
+
+  <div id="footer-placeholder"></div>
+  
+  <script src="js/navbar.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/categories.js"></script>
+  <script src="js/about.js"></script>
+  <script src="js/posts.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/recent-posts.js"></script>
+</body>
+</html>

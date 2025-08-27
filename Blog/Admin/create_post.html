@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增文章 - 管理後台</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/admin-style.css">
+</head>
+<body>
+    <!-- 原有導覽欄和其他結構保持不變 -->
+    <main class="admin-container">
+        <h1>發表新文章</h1>
+        <form id="postForm">
+            <div class="form-group">
+                <label for="postTitle">文章標題：</label>
+                <input type="text" id="postTitle" required>
+            </div>
+
+            <div class="form-group">
+                <label for="postCategory">文章分類：</label>
+                <select id="postCategory" class="form-control" required>
+                    <!-- 分類選項由categories.js動態載入 -->
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="postContent">文章內容：</label>
+                <textarea id="postContent" class="tinymce-editor"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="adminPwd">管理員密碼：</label>
+                <input type="password" id="adminPwd" name="pwd" class="form-control" required>
+            </div>
+            
+            <input type="hidden" name="page" value="新增">
+            <button type="submit" class="btn-primary">發布文章</button>
+        </form>
+    </main>
+
+    <!-- 在頁面底部加入TinyMCE初始化腳本 -->
+    <script src="https://cdn.tiny.cloud/1/uv13n6hb5dle92eqdriwqvmtipyv7kasoakcej1svghttzc4/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        tinymce.init({
+            selector: '#postContent',
+            height: 600,
+            plugins: 'anchor autolink codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+            toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+            content_style: 'body { font-family: "Microsoft JhengHei", sans-serif; font-size:16px }'
+        });
+    });
+    </script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

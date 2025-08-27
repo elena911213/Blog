@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "技術文章",
+      "slug": "tech",
+      "icon": "fas fa-code"
+    },
+    {
+      "name": "設計心得",
+      "slug": "design",
+      "icon": "fas fa-palette"
+    },
+    {
+      "name": "生活隨筆",
+      "slug": "life",
+      "icon": "fas fa-coffee"
+    }
+  ]
+}

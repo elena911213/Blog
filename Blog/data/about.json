@@ -1,0 +1,33 @@
+{
+  "title": "關於作者",
+  "author": {
+    "name": "張小明",
+    "position": "資深技術寫作者與前端開發者",
+    "bio": "專注於Web技術與UX設計，擁有5年以上前端開發經驗。熱愛分享技術知識，致力於創造優質的使用者體驗。",
+    "image": "author-placeholder.jpg"
+  },
+  "skills": [
+    "HTML/CSS/JavaScript",
+    "React/Vue.js",
+    "響應式網頁設計",
+    "使用者體驗設計",
+    "技術寫作"
+  ],
+  "social_links": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/username",
+      "icon": "fab fa-github"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/username",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/username",
+      "icon": "fab fa-twitter"
+    }
+  ]
+}
